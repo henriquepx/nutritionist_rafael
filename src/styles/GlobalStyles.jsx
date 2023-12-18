@@ -28,6 +28,10 @@ const GlobalStyle = createGlobalStyle`
             background-color: #ffffff; 
         }
     }
+
+    body {
+        background-color: #ECECEC;
+    }
   
 `;
 
