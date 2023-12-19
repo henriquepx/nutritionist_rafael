@@ -1,4 +1,5 @@
 import Header from "./sections/Header"
+import Main from "./sections/Main"
 import GlobalStyle from "./styles/GlobalStyles"
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <GlobalStyle />
       
       <Header />
+      <Main />
     </>
   )
 }

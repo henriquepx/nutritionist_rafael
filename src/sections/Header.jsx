@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 const HeaderSize = styled.div`
     max-width: 1400px;
@@ -9,20 +8,19 @@ const HeaderSize = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1.5rem;
+    padding: 2rem 1rem;
 `
-const DivIconsHeader = styled.div`
+const TitleContainer = styled.div`
     display: flex;
     align-items: center;
-    gap: 15px;
-    a {
-        cursor: pointer;
+    gap: 20px;
+    img {
+      width: 70px;
     }
 `
 const TitleHeader = styled.h1`
     font-size: 1.2rem;
     font-weight: 610;
-    margin: 0rem 3rem;
 `
 const NavHeader = styled.div`
     ul {
@@ -89,23 +87,23 @@ const Button = styled.button`
 const Header = () => {
   return (
       <header>
-        <HeaderSize>
-            <DivIconsHeader>
-                <a href="" target='_blank'><FaInstagram size={21} color="#000000" /></a>
-                <a href="" target='_blank'><FaWhatsapp size={21} color="#000000" /></a>
-            </DivIconsHeader>
+      <HeaderSize>
+        <TitleContainer>
+          <TitleHeader>Rafael</TitleHeader>
+          <img src="/logo.png" alt="Logo" />
+        </TitleContainer>
+      
             <NavHeader>
                 <ul>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Serviços</a></li>
-                    <TitleHeader>Rafael - Nutrição</TitleHeader>
                     <li><a href="#">Avaliações</a></li>
                     <li><a href="#">Contato</a></li>
+                    <Button className="btn">
+                        <span className="btn-text">Consulta</span>
+                    </Button>
                 </ul>
             </NavHeader>
-            <Button className="btn">
-                <span className="btn-text">Consulta</span>
-            </Button>
           </HeaderSize>
     </header>
   )
