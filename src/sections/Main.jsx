@@ -15,6 +15,15 @@ const ArrowsToChange = styled.div`
     display: flex;
     gap: 20px;
 `
+const PagesToChange = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    background-color: #fff;
+    padding: 1rem 1.4rem;
+    display: flex;
+    gap: 10px;
+`
 const DivBgMain = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,16 +32,42 @@ const DivBgMain = styled.div`
     height: 70vh;
     background-image: url('/bg.jpg');
 `
+const DivBgMainText = styled.div`
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+
+    padding-top: 14rem;
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    p {
+        max-width: 65ch;
+        margin: 5px 0;
+    }
+`
 
 const Main = () => {
   return (
     <MainContainer>
           <MainSize>
-              <ArrowsToChange>
-                  <GoArrowLeft size={21} color="#000000" />
-                  <GoArrowRight size={21} color="#000000" />
-              </ArrowsToChange>
-            <DivBgMain></DivBgMain>
+                <PagesToChange>
+                    <p>01</p>
+                    <p>/</p>
+                    <p>03</p>
+                </PagesToChange>
+                <ArrowsToChange>
+                    <GoArrowLeft size={21} color="#000000" style={{ cursor: 'pointer' }} />
+                    <GoArrowRight size={21} color="#000000" style={{ cursor: 'pointer' }} />
+                </ArrowsToChange>
+                <DivBgMain>
+                    <DivBgMainText>
+                        <h1>NUTRIÇÃO LEVE E OBJETIVA</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa deleniti unde eaque totam eligendi a, nobis asperiores soluta numquam vitae nam porro expedita maxime iure eum itaque officia fuga delectus.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, vero. Sapiente quas nulla doloremque laborum!</p>  
+                  </DivBgMainText>
+                </DivBgMain>
         </MainSize>
     </MainContainer>
   )
