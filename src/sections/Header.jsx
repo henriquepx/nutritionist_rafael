@@ -38,73 +38,30 @@ const NavHeader = styled.div`
         }
     }
 `
-const Button = styled.button`
-  border: none;
-  padding: 10px 34px;
-  font-size: 16px;
-  position: relative;
-  cursor: pointer;
-  &::before {
-    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    content: '';
-    width: 50%;
-    height: 100%;
-    background: black;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .btn-text {
-    color: white;
-    mix-blend-mode: difference;
-  }
-
-  &::after {
-    content: '»';
-    color: #000;
-    font-size: 1.7rem;
-    position: absolute;
-    opacity: 0;  
-    top: 2px;
-    right: -20px;
-    transition: 0.8s;
-  }
-
-  &:hover {
-    &::after {
-        opacity: 1;
-        right: 10px;
-        color: #fff;
-    }
-    &::before {
-      background: black;
-      width: 110%;
-    }
-  }
+const AnchorToConsulta = styled.a`
+  background-color: #000000;
+  color: #fff;
+  padding: .8rem 1.5rem;
 `;
 
 const Header = () => {
   return (
       <header>
-      <HeaderSize>
-        <TitleContainer>
-          <TitleHeader>Rafael</TitleHeader>
-          <img src="/logo.png" alt="Logo" />
-        </TitleContainer>
-      
-            <NavHeader>
-                <ul>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Avaliações</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <Button className="btn">
-                        <span className="btn-text">Consulta</span>
-                    </Button>
-                </ul>
-            </NavHeader>
-          </HeaderSize>
+        <HeaderSize>
+          <TitleContainer>
+            <TitleHeader>Rafael</TitleHeader>
+            <img src="/logo.png" alt="Logo" />
+          </TitleContainer>
+          <NavHeader>
+            <ul>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Serviços</a></li>
+              <li><a href="#">Avaliações</a></li>
+              <li><a href="#">Contato</a></li>
+              <AnchorToConsulta href="#">Consulta</AnchorToConsulta>
+            </ul>
+          </NavHeader>
+        </HeaderSize>
     </header>
   )
 }

@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-color: #ECECEC;
+        background-color: #ffffff;
     }
   
 `;
