@@ -13,7 +13,7 @@ const MainSize = styled.div`
 const ArrowsToChange = styled.div`
   position: absolute;
   right: 0;
-  bottom: 50px;
+  bottom: 20%;
   background-color: #fff;
   padding: 1rem 3rem;
   display: flex;
@@ -23,7 +23,7 @@ const ArrowsToChange = styled.div`
 const PagesToChange = styled.div`
   position: absolute;
   left: 0;
-  bottom: 50px;
+  bottom: 20%;
   background-color: #fff;
   padding: 1rem 1.4rem;
   display: flex;
@@ -35,7 +35,7 @@ const DivBgMain = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 60vh;
+  height: 62vh;
   background-image: url('/emagrecimento.jpg');
   display: ${(props) => (props.currentPage === 1 ? 'block' : 'none')};
 `;
