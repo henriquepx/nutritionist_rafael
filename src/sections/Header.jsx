@@ -1,26 +1,27 @@
 import styled from 'styled-components';
 
 const HeaderSize = styled.div`
-    max-width: 1400px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 1.5rem 1rem 2.5rem 1rem;
 `
 const TitleContainer = styled.div`
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
-    img {
-      width: 70px;
-    }
 `
-const TitleHeader = styled.h1`
-    font-size: 1.2rem;
-    font-weight: 610;
+const ImgLogo = styled.img`
+  width: 60px;
+`
+const ImgAssinatura = styled.img`
+  width: 320px;
 `
 const NavHeader = styled.div`
     ul {
@@ -38,19 +39,14 @@ const NavHeader = styled.div`
         }
     }
 `
-const AnchorToConsulta = styled.a`
-  background-color: #000000;
-  color: #fff;
-  padding: .8rem 1.5rem;
-`;
 
 const Header = () => {
   return (
       <header>
         <HeaderSize>
-          <TitleContainer>
-            <TitleHeader>Rafael</TitleHeader>
-            <img src="/logo.png" alt="Logo" />
+        <TitleContainer>
+            <ImgLogo src="/name.png" alt="Logo" />
+            <ImgAssinatura src="/assinatura.png" alt="Nome do Rafael" />
           </TitleContainer>
           <NavHeader>
             <ul>
@@ -58,7 +54,6 @@ const Header = () => {
               <li><a href="#">Serviços</a></li>
               <li><a href="#">Avaliações</a></li>
               <li><a href="#">Contato</a></li>
-              <AnchorToConsulta href="#">Consulta</AnchorToConsulta>
             </ul>
           </NavHeader>
         </HeaderSize>

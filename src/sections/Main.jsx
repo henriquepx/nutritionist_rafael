@@ -6,12 +6,10 @@ const MainContainer = styled.main`
   position: relative;
   overflow: hidden;
 `;
-
 const MainSize = styled.div`
   display: flex;
   transition: transform 0.5s ease-in-out;
 `;
-
 const ArrowsToChange = styled.div`
   position: absolute;
   right: 0;
@@ -37,37 +35,91 @@ const DivBgMain = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 70vh;
-  background-image: url('/bg.jpg');
+  height: 60vh;
+  background-image: url('/emagrecimento.jpg');
   display: ${(props) => (props.currentPage === 1 ? 'block' : 'none')};
 `;
 
 const DivBgMain2 = styled(DivBgMain)`
-  background-image: url('/bg2.jpg');
+  background-image: url('/hipertrofia.jpg');
   display: ${(props) => (props.currentPage === 2 ? 'block' : 'none')};
 `;
 
 const DivBgMain3 = styled(DivBgMain)`
-  background-image: url('/bg.jpg');
+  background-image: url('/qualidadevida.jpg');
   display: ${(props) => (props.currentPage === 3 ? 'block' : 'none')};
 `;
 
+
 const DivBgMainText = styled.div`
-  max-width: 1300px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(0, 0, 0, .5);
+  width: 50%;
   margin: 0 auto;
-  padding-top: 14rem;
-
+  margin-top: 2rem;
+  padding: 2rem;
   h1 {
-    font-size: 3rem;
+    color: #fff;
+    font-size: 2.3rem;
     margin-bottom: 1rem;
+    font-weight: 600;
   }
-
   p {
-    max-width: 65ch;
-    margin: 5px 0;
+    color: #fff;
+    font-size: 1rem;
+    max-width: 80ch;
+    margin: 0 auto;
   }
 `;
+const DivBgMainText2 = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(0, 0, 0, .5);
+  width: 50%;
+  margin: 10rem 0rem 0rem 10rem;
+  padding: 2rem;
+  h1 {
+    color: #fff;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  p {
+    color: #fff;
+    font-size: 1rem;
+    max-width: 80ch;
+    margin: 0 auto;
+  }
+`;
+
+
+const DivBgMainText3 = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(0, 0, 0, .3);
+  width: 50%;
+  margin: 10rem 0rem 0rem 7rem;
+  padding: 2rem;
+  h1 {
+    color: #fff;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  p {
+    color: #fff;
+    font-size: 1rem;
+    max-width: 80ch;
+    margin: 0 auto;
+  }
+`;
+
 
 const Main = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -85,7 +137,7 @@ const Main = () => {
       <MainSize>
         <DivBgMain currentPage={currentPage}>
           <DivBgMainText>
-            <h1>NUTRIÇÃO LEVE E OBJETIVA</h1>
+            <h1>Frase 1</h1>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
               deleniti unde eaque totam eligendi a, nobis asperiores soluta
@@ -100,8 +152,8 @@ const Main = () => {
         </DivBgMain>
 
         <DivBgMain2 currentPage={currentPage}>
-          <DivBgMainText>
-            <h1>CONHEÇA MEU TRABALHO</h1>
+          <DivBgMainText2>
+            <h1>Frase 2</h1>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
               deleniti unde eaque totam eligendi a, nobis asperiores soluta
@@ -112,12 +164,12 @@ const Main = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
               vero. Sapiente quas nulla doloremque laborum!
             </p>
-          </DivBgMainText>
+          </DivBgMainText2>
         </DivBgMain2>
 
         <DivBgMain3 currentPage={currentPage}>
-          <DivBgMainText>
-            <h1>ENTRE EM CONTATO</h1>
+          <DivBgMainText3>
+            <h1>Frase 3</h1>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
               deleniti unde eaque totam eligendi a, nobis asperiores soluta
@@ -128,8 +180,9 @@ const Main = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
               vero. Sapiente quas nulla doloremque laborum!
             </p>
-          </DivBgMainText>
+          </DivBgMainText3>
         </DivBgMain3>
+
       </MainSize>
 
       <PagesToChange>

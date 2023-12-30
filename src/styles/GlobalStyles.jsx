@@ -35,4 +35,27 @@ const GlobalStyle = createGlobalStyle`
   
 `;
 
+/*
+Nutricionista clínico e esportivo
+- Formado na IBMR Laureate
+  CRN 23100547
+
+Te guio no caminho dos seus objetivos:
+
+🍎 Emagrecimento 🏃🏻‍♂
+🥑 Hipertrofia 🏋🏻‍♂
+🍓 Reeducação alimentar 🙆🏻‍♂
+🍋 Qualidade de vida
+
+📍 Atendimento presencial e online
+
+Alcance suas metas sem radicalismo e sem fazer dietas que estão na moda, comigo você terá um planejamento alimentar totalmente individualizado e preparado cuidadosamente para te entregar o resultado que você espera.
+
+Seus objetivos, nossas metas!
+Acerte o 🎯
+
+• Agende a sua consulta
+
+*/
+
 export default GlobalStyle;
