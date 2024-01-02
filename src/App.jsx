@@ -1,3 +1,4 @@
+import MapsLocation from "./components/MapsLocation"
 import Wpp from "./components/Wpp"
 import About from "./sections/About"
 import Footer from "./sections/Footer"
@@ -15,7 +16,8 @@ function App() {
       <Header />
       <Main />
       <About />
-      
+
+      <MapsLocation />
       <Footer />
     </>
   )
