@@ -1,5 +1,6 @@
 import Wpp from "./components/Wpp"
 import About from "./sections/About"
+import Footer from "./sections/Footer"
 import Header from "./sections/Header"
 import Main from "./sections/Main"
 import GlobalStyle from "./styles/GlobalStyles"
@@ -14,6 +15,8 @@ function App() {
       <Header />
       <Main />
       <About />
+      
+      <Footer />
     </>
   )
 }
