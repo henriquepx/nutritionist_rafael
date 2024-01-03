@@ -6,7 +6,7 @@ const MapsContainer = styled.div`
     align-items: center;
     gap: 100px;
 
-    margin-bottom: 3rem;
+    margin: 3rem 0rem;
 `;
 
 const MapIframe = styled.iframe`

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FaWhatsapp, FaFacebook, FaInstagram, FaVoicemail, FaComment } from 'react-icons/fa'
+import { FaWhatsapp, FaFacebook, FaInstagram, FaComment } from 'react-icons/fa'
 
 const FooterContainer = styled.footer`
     height: 40vh;
@@ -11,7 +11,7 @@ const FooterContainer = styled.footer`
     }
 `
 const FooterSize = styled.div`
-    max-width: 1000px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 

@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 const AboutContainer = styled.div`
   height: 80vh;
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 
-  padding: 7rem 0rem;
+  padding: 7rem 0rem 3rem;
   display: flex;
   gap: 60px;
 `
